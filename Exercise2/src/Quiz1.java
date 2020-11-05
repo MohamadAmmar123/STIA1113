@@ -5,7 +5,7 @@ public class Quiz1 {
 
 	        Scanner sc=new Scanner(System.in);
 	        
-	        double feet,inches, totalinches, kg, f, m;
+	        double feet,inches, f, m;
 	        
 
 	        System.out.println("Enter height in feet and inches,");
@@ -15,16 +15,13 @@ public class Quiz1 {
 	        System.out.print("Inches: ");
 	        inches = sc.nextDouble();
 
-	        System.out.print("Enter weight in kg: ");
-	        kg = sc.nextDouble();
+	       
 	        
-	        totalinches = inches+((feet-5)*12);
+	        f = ((((feet-5)*12)+inches)*5)+40;
+	        m = ((((feet-5)*12)+inches)*6)+50;
 	        
-	        f = kg + (5*totalinches);
-	        m = kg + (6*totalinches);
-	        
-	        System.out.println("Ideal weight for female: "+f);
-	        System.out.print("Ideal weight for male: "+m);
+	        System.out.println("Ideal weight for female: "+f +"kg");
+	        System.out.print("Ideal weight for male: "+m +"kg");
 	        sc.close();
 	    }
    }
