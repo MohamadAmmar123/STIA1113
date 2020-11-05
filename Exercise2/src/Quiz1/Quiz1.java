@@ -1,3 +1,5 @@
+package Quiz1;
+
 import java.util.*;
 public class Quiz1 {
 
